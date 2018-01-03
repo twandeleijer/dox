@@ -11,6 +11,36 @@ body {
     padding-bottom: 20px;
 }
 
+.cover {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.cover--background {
+    background-image: url(/images/image_duesseldorf.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
+
+.cover header {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cover header h1 {
+    font-weight: bold;
+}
+
+.cover header p {
+    color: rgba(0,0,0,0.5);
+}
+
 mark {
     background-color: rgba(255,255,0,0.7);
 }
@@ -49,6 +79,18 @@ figure, blockquote {
     margin-right: 0;
     margin-bottom: 1em;
     margin-left: 0;
+}
+
+figure.u-pull-left {
+    margin-right: 20px;
+}
+
+figure.u-pull-right {
+    margin-left: 20px;
+}
+
+img {
+    width: 100%;
 }
 
 figcaption {
